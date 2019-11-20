@@ -1,0 +1,1 @@
+MultiMonitorTool.exe /enable 2
