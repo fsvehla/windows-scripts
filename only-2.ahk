@@ -1,8 +1,12 @@
 #SingleInstance force
 !^2::
 
-Run C:\Users\Ferdinand\Dev\windows-scripts\MultiMonitorTool.exe /enable "MONITOR\DON004C\{4d36e96e-e325-11ce-bfc1-08002be10318}\0002"
+; Ctrl+Alt+1
+
+run, C:\Windows\System32\DisplaySwitch.exe /external
+
+;; Delegate to SoundSwitch
 Sleep, 2
-Run C:\Users\Ferdinand\Dev\windows-scripts\MultiMonitorTool.exe /disable "MONITOR\BNQ8028\{4d36e96e-e325-11ce-bfc1-08002be10318}\0001"
+Send ^!7
 
 return
